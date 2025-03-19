@@ -1,0 +1,120 @@
+body {
+    background-color: #2e382e;
+    min-height: 1700px;
+    margin: 0;
+    font-family: "DM Sans";
+  }
+
+  .about{
+    font-size:70px;
+    margin-left:30px;
+    color:#50c9ce;
+    
+  
+  }
+  .first-div {
+    margin-top: 25px;
+    /* margin-left: 68%; */
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar {
+    text-decoration: solid;
+    margin-right: 60px;
+    color: #2e382e;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  .navbar-wrapper {
+    /* border: 2px solid black; */
+    margin-top: 20px;
+  }
+  
+  
+  .navbar:last-child {
+    margin-right: 0;
+  }
+
+  .smart {
+    margin-left: 20px;
+    /* border: 2px solid black; */
+    margin-bottom: 50px;
+    color:#50c9ce;
+    width:135px;
+    border:1px solid #50c9ce;
+    border-radius:3px;
+    padding-left: 7px;
+
+  }
+  button {
+    height: 40px;
+    width: 100px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    /* border-color:#e2f3f4; */
+    /* border: 2px solid black; */
+    margin-right: 10px;
+  }
+
+  img{
+  width: 510px;
+  height: 570px;
+ /* border: 2px solid black; */
+  background: linear-gradient(135deg, #ff6b6b, #f06595);
+            border-radius: 50%;
+            position: relative;
+            animation: blobAnimation 5s infinite;
+        }
+
+        @keyframes blobAnimation {
+            0%, 100% {
+                border-radius: 50% 50% 50% 50%;
+            }
+            25% {
+                border-radius: 60% 40% 60% 40%;
+            }
+            50% {
+                border-radius: 40% 60% 40% 60%;
+            }
+            75% {
+                border-radius: 50% 60% 40% 50%;
+            }
+  }
+
+  .img-container {
+   margin-right:150px;
+   margin-top:50px;
+   width:fit-content;
+   /* border:2px solid black; */
+  }
+
+  .introduction {
+    color:#cffafe;
+    margin-left:30px;
+   
+  }
+
+  .side{
+  border-radius: 25px;
+  width: 600px;
+  height: 500px;
+  background-color: transparent;
+  border:1px solid #50c9ce;
+  margin-left:5%;
+  margin-top: 80px;
+  }
+
+  .box-image-wrapper {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .intro{
+    color:#cffafe;
+    padding: 80px;
+  }

@@ -1,0 +1,100 @@
+.services-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+/* Slider Container */
+.services-slider {
+  display: flex;
+  width: 300%; /* Accommodate 3 full sets of cards */
+  animation: slide 15s linear infinite;
+}
+
+/* Pause animation on hover */
+.services-slider:hover {
+  animation-play-state: paused;
+}
+
+/* Keyframe Animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33.33% {
+    transform: translateX(-14.33%);
+  }
+  66.66% {
+    transform: translateX(-28.66%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Slider Inner Container */
+.services-slider-inner {
+  display: flex;
+  width: 100%;
+}
+
+/* Card Styles */
+.service-card {
+  flex: 0 0 300px;
+  background-color: transparent;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #50c9ce;
+}
+
+.service-card-description {
+  color: #cffafe;
+  line-height: 1.6;
+}
+
+/* More Services Button */
+.more-services-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.more-services-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    flex: 0 0 250px;
+  }
+}
